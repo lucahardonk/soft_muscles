@@ -1,0 +1,740 @@
+[
+    {
+        "id": "2d18b545013d0d78",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a7a1d8490d5ef303",
+        "type": "inject",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "OPEN_A_AIR",
+        "payloadType": "str",
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "d39bb0fad03b4a1c"
+            ]
+        ]
+    },
+    {
+        "id": "d39bb0fad03b4a1c",
+        "type": "exec",
+        "z": "2d18b545013d0d78",
+        "command": "python3 ~/Desktop/python_to_arduino_strings.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 490,
+        "y": 280,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "2a6e5d936f225676",
+        "type": "inject",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "CLOSE_A_AIR",
+        "payloadType": "str",
+        "x": 140,
+        "y": 300,
+        "wires": [
+            [
+                "d39bb0fad03b4a1c"
+            ]
+        ]
+    },
+    {
+        "id": "77b1e182e8d18258",
+        "type": "inject",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "OPEN_A_OUT",
+        "payloadType": "str",
+        "x": 140,
+        "y": 380,
+        "wires": [
+            [
+                "c6862ac7a41519ed"
+            ]
+        ]
+    },
+    {
+        "id": "c6862ac7a41519ed",
+        "type": "exec",
+        "z": "2d18b545013d0d78",
+        "command": "python3 ~/Desktop/python_to_arduino_strings.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 490,
+        "y": 400,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "37101bb4b4a95431",
+        "type": "inject",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "CLOSE_A_OUT",
+        "payloadType": "str",
+        "x": 140,
+        "y": 420,
+        "wires": [
+            [
+                "c6862ac7a41519ed"
+            ]
+        ]
+    },
+    {
+        "id": "262b2c58d5848d57",
+        "type": "inject",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "OPEN_B_AIR",
+        "payloadType": "str",
+        "x": 130,
+        "y": 500,
+        "wires": [
+            [
+                "8e2ee6769136e970"
+            ]
+        ]
+    },
+    {
+        "id": "8e2ee6769136e970",
+        "type": "exec",
+        "z": "2d18b545013d0d78",
+        "command": "python3 ~/Desktop/python_to_arduino_strings.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 490,
+        "y": 520,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "09539588e03ea5b6",
+        "type": "inject",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "CLOSE_B_AIR",
+        "payloadType": "str",
+        "x": 140,
+        "y": 540,
+        "wires": [
+            [
+                "8e2ee6769136e970"
+            ]
+        ]
+    },
+    {
+        "id": "9e1a6efb5186af04",
+        "type": "inject",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "OPEN_B_OUT",
+        "payloadType": "str",
+        "x": 140,
+        "y": 640,
+        "wires": [
+            [
+                "c36861ad46bbf6bf"
+            ]
+        ]
+    },
+    {
+        "id": "c36861ad46bbf6bf",
+        "type": "exec",
+        "z": "2d18b545013d0d78",
+        "command": "python3 ~/Desktop/python_to_arduino_strings.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 490,
+        "y": 660,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b3d2937be7c024fa",
+        "type": "inject",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "CLOSE_B_OUT",
+        "payloadType": "str",
+        "x": 140,
+        "y": 680,
+        "wires": [
+            [
+                "c36861ad46bbf6bf"
+            ]
+        ]
+    },
+    {
+        "id": "708e9b7ac25f37fd",
+        "type": "inject",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "MOVE_MOTOR:0",
+        "payloadType": "str",
+        "x": 150,
+        "y": 760,
+        "wires": [
+            [
+                "bd99712aeef96aa8"
+            ]
+        ]
+    },
+    {
+        "id": "bd99712aeef96aa8",
+        "type": "exec",
+        "z": "2d18b545013d0d78",
+        "command": "python3 ~/Desktop/python_to_arduino_strings.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 630,
+        "y": 760,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "cf2073c6a9891f99",
+        "type": "ui_slider",
+        "z": "2d18b545013d0d78",
+        "name": "motor position",
+        "label": "slider",
+        "tooltip": "",
+        "group": "379b310d25c2811b",
+        "order": 0,
+        "width": "8",
+        "height": "1",
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 180,
+        "y": 800,
+        "wires": [
+            [
+                "9ee2de1a7785f491"
+            ]
+        ]
+    },
+    {
+        "id": "7b73f735407c8db1",
+        "type": "debug",
+        "z": "2d18b545013d0d78",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "9ee2de1a7785f491",
+        "type": "template",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "MOVE_MOTOR:{{payload}}",
+        "output": "str",
+        "x": 320,
+        "y": 800,
+        "wires": [
+            [
+                "7b73f735407c8db1",
+                "bd99712aeef96aa8"
+            ]
+        ]
+    },
+    {
+        "id": "26484d71759b6e5e",
+        "type": "inject",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "OPEN_ALL",
+        "payloadType": "str",
+        "x": 170,
+        "y": 940,
+        "wires": [
+            [
+                "747296ed34def7d4"
+            ]
+        ]
+    },
+    {
+        "id": "747296ed34def7d4",
+        "type": "exec",
+        "z": "2d18b545013d0d78",
+        "command": "python3 ~/Desktop/python_to_arduino_strings.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 490,
+        "y": 980,
+        "wires": [
+            [
+                "164eac7d481df9cc"
+            ],
+            [
+                "164eac7d481df9cc"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1eb4f6a2dcf7d16b",
+        "type": "inject",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "CLOSE_ALL",
+        "payloadType": "str",
+        "x": 170,
+        "y": 980,
+        "wires": [
+            [
+                "747296ed34def7d4"
+            ]
+        ]
+    },
+    {
+        "id": "aeb0d79cfb16ef05",
+        "type": "ui_button",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "group": "379b310d25c2811b",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "label": "OPEN_ALL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "OPEN_ALL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 1060,
+        "wires": [
+            [
+                "52c4c9eaa195f0c0"
+            ]
+        ]
+    },
+    {
+        "id": "3ae14010ca07efbe",
+        "type": "ui_button",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "group": "379b310d25c2811b",
+        "order": 2,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "label": "CLOSE_ALL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "CLOSE_ALL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 1100,
+        "wires": [
+            [
+                "52c4c9eaa195f0c0"
+            ]
+        ]
+    },
+    {
+        "id": "52c4c9eaa195f0c0",
+        "type": "template",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload}}",
+        "output": "str",
+        "x": 580,
+        "y": 1080,
+        "wires": [
+            [
+                "747296ed34def7d4"
+            ]
+        ]
+    },
+    {
+        "id": "164eac7d481df9cc",
+        "type": "debug",
+        "z": "2d18b545013d0d78",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "1d3dd22ab0c765f9",
+        "type": "inject",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "PUMP_TO_0",
+        "payloadType": "str",
+        "x": 170,
+        "y": 1020,
+        "wires": [
+            [
+                "747296ed34def7d4"
+            ]
+        ]
+    },
+    {
+        "id": "af2fc4dec062a29d",
+        "type": "inject",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "PUMP_TO_100",
+        "payloadType": "str",
+        "x": 180,
+        "y": 1060,
+        "wires": [
+            [
+                "747296ed34def7d4"
+            ]
+        ]
+    },
+    {
+        "id": "99cb668b0146c8c0",
+        "type": "ui_button",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "group": "379b310d25c2811b",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "label": "PUMP_TO_0",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "PUMP_TO_0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 1140,
+        "wires": [
+            [
+                "52c4c9eaa195f0c0"
+            ]
+        ]
+    },
+    {
+        "id": "93c659753e4a3623",
+        "type": "ui_button",
+        "z": "2d18b545013d0d78",
+        "name": "",
+        "group": "379b310d25c2811b",
+        "order": 2,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "label": "PUMP_TO_100",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "PUMP_TO_100",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 420,
+        "y": 1180,
+        "wires": [
+            [
+                "52c4c9eaa195f0c0"
+            ]
+        ]
+    },
+    {
+        "id": "379b310d25c2811b",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "be76881e37ccb490",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "be76881e37ccb490",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
