@@ -1,0 +1,96 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.whl
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Byte-compiled C extensions
+*.so
+
+# -----------------------------
+# Environment / Config
+# -----------------------------
+.env
+.env.*
+*.ini
+*.cfg
+*.conf
+
+# -----------------------------
+# Logs & Debug
+# -----------------------------
+*.log
+log/
+logs/
+
+# -----------------------------
+# VSCode / PyCharm / Editors
+# -----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -----------------------------
+# OS-specific
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Docker
+# -----------------------------
+docker-compose.override.yml
+.dockerignore
+*.tar
+*.tar.gz
+*.zip
+*.7z
+
+# -----------------------------
+# Flask static uploads
+# -----------------------------
+static/uploads/
+static/images/
+static/files/
+
+# -----------------------------
+# Application data
+# -----------------------------
+data/
+backup/
+bakup_data/
+
+# SQLite / Local DB
+*.db
+*.sqlite
+*.sqlite3
+
+# -----------------------------
+# Node / Frontend (Optional)
+# -----------------------------
+node_modules/
+dist/
+build/
+
+# -----------------------------
+# Testing
+# -----------------------------
+.coverage
+htmlcov/
+pytest_cache/
